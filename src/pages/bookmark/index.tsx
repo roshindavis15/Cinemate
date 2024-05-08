@@ -1,6 +1,6 @@
 import React from 'react';
 
-const bookmark=()=>{
+const Bookmark=()=>{
     return (
         <div>
         BookMark
@@ -8,4 +8,4 @@ const bookmark=()=>{
     )
 }
 
-export default bookmark;
+export default Bookmark;
