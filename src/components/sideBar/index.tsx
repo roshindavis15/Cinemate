@@ -41,16 +41,17 @@ const Sidebar=()=>{
             borderRadius:2,
             display:"flex",
             flexDirection:{
-                xs:'row',
+                xs:"row",
                 lg:"column"
             },
-            alignItems:'center',
-            justifyContent:'space-between',
-            width:'100%',
+            alignItems:"center",
+            justifyContent:"space-between",
+            width:"100%",
             lg:200
         }}
         >
-            <Box sx={{display:"flex",
+            <Box sx={{
+                display:"flex",
         flexDirection:{
             xs:"row",
             lg:"column"
@@ -58,7 +59,7 @@ const Sidebar=()=>{
         gap:5,
         alignItems:{
             xs:"center",
-            ls:"start"
+            lg:"start"
         },
         width:"100%"
             
@@ -78,7 +79,7 @@ const Sidebar=()=>{
         <Box sx={{
           py:{
             xs:"0px",
-            ls:"16pc"
+            lg:"16px"
           },
           display:"flex",
           flexDirection:{
