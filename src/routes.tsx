@@ -5,6 +5,7 @@ import Movies from "./pages/movies";
 import TvSeries from "./pages/tv-series";
 import Bookmark from "./pages/bookmark";
 
+
 export const router=createBrowserRouter([
     {
         path:"/",
