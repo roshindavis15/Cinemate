@@ -36,7 +36,7 @@ const Sidebar=()=>{
     return (
         <Box
         sx={{
-            backgroundColor:"161d2f",
+            backgroundColor:"#161d2f",
             padding:2,
             borderRadius:2,
             display:"flex",
@@ -46,8 +46,10 @@ const Sidebar=()=>{
             },
             alignItems:"center",
             justifyContent:"space-between",
-            width:"100%",
+            width:{
+            sm:"100%",
             lg:200
+            },
         }}
         >
             <Box sx={{
