@@ -6,7 +6,7 @@ import MovieList from "../../components/movie-list";
 import MovieTrendList from "../../components/movie-list/movieTrendList";
 import { MovieDataType } from "../../assets/data";
 import { MovieContext } from "../../context/movie-context";
-import { stat } from "fs";
+
 
 const Home = () => {
   const [search, setSearch] = useState("");
@@ -15,12 +15,13 @@ const Home = () => {
   const {movies}=state;
   const trendingList=movies.filter((item)=>item.isTrending===true);
   const recommendList=movies.filter((item)=>item.isTrending!==true);
-  const handleSearch=(e:{target:{value:SetStateAction<string>}})=>
+  const handleSearch=(e:{target:{value:SetStateAction<string>}})=>{
     setSearch(e.target.value);
     const newList=movies.filter((movie)=>movie.title.toLowerCase().includes(search.toLowerCase())
   );
 
     setSearchList(newList);
+    }
   return (
     <Layout>
       <Box>
@@ -64,7 +65,7 @@ const Home = () => {
             <Typography variant="h5" component="h1" my={6} fontWeight={400}>
               Trending
             </Typography>
-            <MovieTrendList tredingList={trendingList} />
+            <MovieTrendList trendingList={trendingList} />
 
           </Box>
           <Box width="100%">
