@@ -4,11 +4,11 @@ import {router} from "./routes";
 import { MovieProvider } from "./context/movie-context";
 
 const App=()=>{
-    return
+    return(
     <MovieProvider>
      <RouterProvider router={router}/>
     </MovieProvider>
-     
+    )
 };
 
 export default App;
